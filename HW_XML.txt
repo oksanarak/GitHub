@@ -51,7 +51,7 @@ add file > Create new file
 Сделать Commit changes (сохранить) изменения на веб интерфейсе
 Commit changes
 
-На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате XML
+На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML
 <?xml version="1.0"?>
 <CAT>
   <summary>Login page: the button Sign in is displaced after clicking on the page</summary>
