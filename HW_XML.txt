@@ -1,0 +1,69 @@
+Создать внешний репозиторий c названием XML
+create new repository 
+
+Клонировать репозиторий XML на локальный компьютер
+git clone  ссылка на созданный репозиторий
+
+Внутри локального XML создать файл “new.xml”
+touch new.xml
+
+Добавить файл под гит
+git add new.xml
+
+Закоммитить файл
+git commit -m "Add new file"
+
+Отправить файл на внешний GitHub репозиторий
+git push
+
+Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML
+cat >> new.xml
+<?xml version="1.0"?>
+<CAT>
+  <NAME>Oksana</NAME>
+  <NAME>Rak</NAME>
+  <AGE>31</AGE>
+  <PETS>zero</PETS>
+  <Salary>1000</Salary>
+</CAT>
+
+Отправить изменения на внешний репозиторий
+git push
+
+Создать файл preferences.xml
+touch preferences.xml
+
+В файл preferences.xml добавить информацию о своих предпочтениях в формате XML
+cat >> preferences.xml
+
+Создать файл sklls.xml добавить информацию о скиллах, которые будут изучены на курсе в формате XML
+cat >> skills.xml
+
+Сделать коммит в одну строку
+git add . | git commit -m "add 2 new file xml"
+
+Отправить сразу 2 файла на внешний репозиторий
+git push
+
+На веб интерфейсе создать файл bug_report.xml
+add file > Create new file
+
+Сделать Commit changes (сохранить) изменения на веб интерфейсе
+Commit changes
+
+На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате XML
+<?xml version="1.0"?>
+<CAT>
+  <summary>Login page: the button Sign in is displaced after clicking on the page</summary>
+  <type>Bug</type>
+  <environment>Windows 10</environment>
+  <priority>Low</priority>
+  <severity>Trivial</severity>
+  <reporter>Oksana Rak</reporter>
+</CAT>
+
+Сделать Commit changes (сохранить) изменения на веб интерфейсе
+Commit new file
+
+Синхронизировать внешний и локальный репозиторий XML
+git pull
