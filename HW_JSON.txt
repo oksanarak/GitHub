@@ -1,0 +1,65 @@
+Создать внешний репозиторий c названием JSON
+create new repository 
+
+Клонировать репозиторий JSON на локальный компьютер
+git clone  ссылка на созданный репозиторий
+
+Внутри локального JSON создать файл “new.json”
+touch new.json
+
+Добавить файл под гит
+git add new.json
+
+Закоммитить файл
+git commit -m "Add new file"
+
+Отправить файл на внешний GitHub репозиторий
+git push
+
+Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON
+cat >> new.json
+{
+    "Name": "Rak Oksana Arturovna",
+    "Age": 31,
+    "Pets": "don' have",
+    "Salary": 1000
+}
+
+Отправить изменения на внешний репозиторий
+git push
+
+Создать файл preferences.json
+touch preferences.json
+
+В файл preferences.json добавить информацию о своих предпочтениях в формате JSON
+cat >> preferences.json
+
+Создать файл sklls.json добавить информацию о скиллах, которые будут изучены на курсе в формате JSON
+cat >> skills.json
+
+Отправить сразу 2 файла на внешний репозиторий
+git add {preferences.json,skills.json}
+git commit -m "add new info"
+git push
+
+На веб интерфейсе создать файл bug_report.json
+add file > Create new file
+
+Сделать Commit changes (сохранить) изменения на веб интерфейсе
+Commit changes
+
+На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON
+{
+  "Summary": "Typo in a word Google",
+  "Type": "Bug",
+  "Environment": "Windows" 10, "Google Chrome",
+  "Priority": "High",
+  "Severity": "Low",
+  "Reporter": "Oksana Rak"
+}
+
+Сделать Commit changes (сохранить) изменения на веб интерфейсе
+Commit new file
+
+Синхронизировать внешний и локальный репозиторий JSON
+git pull
